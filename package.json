@@ -6,8 +6,9 @@
   "scripts": {
     "build:clean": "rm -rf dist && mkdir dist",
     "build:css": "postcss style.css -o dist/style.css",
+    "build:static": "cp -r static dist",
     "build:html": "sed 's/dist\\///' index.html > dist/index.html",
-    "build": "npm run build:clean && npm run build:css && npm run build:html",
+    "build": "npm run build:clean && npm run build:css && npm run build:static && npm run build:html",
     "dist": "NODE_ENV=production npm run build",
     "dev": "watch 'npm run build' ./ -p /dist/"
   },
