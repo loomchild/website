@@ -4,7 +4,11 @@ module.exports = {
     './**/*.html',
   ],
   theme: {
-    extend: {},
+    extend: {
+      maxHeight: {
+        'almost-screen': '85vh'
+      }
+    },
   },
   variants: {
     margin: ['responsive']
