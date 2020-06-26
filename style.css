@@ -12,4 +12,8 @@
 
 @tailwind utilities;
 
+.hyphens {
+  hyphens: auto;
+}
+
 @tailwind screens;
